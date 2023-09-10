@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tareas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>Lista de Tareas</h1>
+  <input type="text" id="nuevaTarea" placeholder="Ingrese nueva Tarea:">
+  <div class="botones">
+    <button onclick="agregarTarea()">Agregar</button>
+    <button onclick="mostrarCompletadas()">Completadas</button>
+    <button onclick="mostrarPendientes()">Pendientes</button>
+    <button onclick="borrarTareas()" class="borrarTodasLasTareas" id="borrar">Borrar Tareas</button>
+  </div>
+  <ul id="listaTareas"></ul>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
